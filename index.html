@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CMIP7 Resources</title>
+
+<style>
+:root {
+    --primary: #005a9c;
+    --primary-dark: #003f6b;
+    --accent: #0085ca;
+    --bg: #f5f8fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #64748b;
+    --border: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary)
+    );
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+    opacity: .95;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.75rem;
+    transition: .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.card h2 {
+    color: var(--primary);
+    margin-bottom: .75rem;
+}
+
+.card p {
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    transition: .2s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-secondary {
+    background: #eef4fa;
+    color: var(--primary);
+    border: 1px solid #d4e3f2;
+}
+
+.btn-secondary:hover {
+    background: #e4eff9;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>CMIP7 Resources</h1>
+    <p>
+        Quick access to Guidance, Essential Model Documentation (EMD),
+        and official WCRP-CMIP resources.
+    </p>
+</section>
+
+<div class="container">
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Guidance</h2>
+            <p>
+                Mirror of the CMIP7 Guidance and Documentation portal.
+            </p>
+
+            <div class="links">
+                <a class="btn btn-primary"
+                   href="https://guidance.mipcvs.dev"
+                   target="_blank">
+                    Open Guidance
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>EMD</h2>
+            <p>
+                Essential Model Documentation for CMIP7 models.
+            </p>
+
+            <div class="links">
+                <a class="btn btn-primary"
+                   href="https://emd.mipcvs.dev"
+                   target="_blank">
+                    Open EMD
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>WCRP-CMIP</h2>
+            <p>
+                Official Coupled Model Intercomparison Project website.
+            </p>
+
+            <div class="links">
+                <a class="btn btn-primary"
+                   href="https://wcrp-cmip.org"
+                   target="_blank">
+                    Open WCRP-CMIP
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>CMIP7 GitHub Pages</h2>
+            <p>
+                Official CMIP7 Guidance and Documentation site.
+            </p>
+
+            <div class="links">
+                <a class="btn btn-primary"
+                   href="https://wcrp-cmip.github.io/cmip7-guidance/"
+                   target="_blank">
+                    Open GitHub Pages
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="https://github.com/WCRP-CMIP/cmip7-guidance"
+                   target="_blank">
+                    View Repository
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    CMIP7 • WCRP-CMIP • Guidance • EMD
+</footer>
+
+</body>
+</html>
